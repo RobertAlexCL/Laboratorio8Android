@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:tools="http://schemas.android.com/tools"
+            android:id="@+id/navigation2" app:startDestination="@id/fproducts">
+    <fragment android:id="@+id/fproducts"
+              android:name="com.example.lab5.fproducts"
+              android:label="fragmentoProductos"
+              tools:layout="@layout/productos_fragment">
+        <action android:id="@+id/action_fproducts_to_nuevo2" app:destination="@id/neww"/>
+    </fragment>
+    <fragment android:id="@+id/neww"
+              android:name="com.example.lab5.new"
+              android:label="nuevo"
+              tools:layout="@layout/nuevo_fragment">
+        <action android:id="@+id/action_neww_to_fproducts" app:destination="@id/fproducts"/>
+    </fragment>
+</navigation>
